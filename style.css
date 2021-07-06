@@ -29,6 +29,10 @@ section {
   flex-direction: row;
 }
 
+#carouselimg {
+  margin: 10px;
+}
+
 .wrap-box {
   display: flex;
   flex-direction: column;
@@ -36,13 +40,13 @@ section {
   align-items: center;
 }
 
-.dots {
+ul.dots {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dot {
+li.dot {
   width: 20px;
   height: 20px;
   border: 1px solid white;
@@ -52,6 +56,6 @@ section {
 }
 
 .active {
-  background-color: white;
+  background-color: red;
   border: none;
 }
