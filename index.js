@@ -75,37 +75,35 @@ dot5.addEventListener("click", img5);
  * prev, next 버튼
  * 현재 첫 이미지일 때 prev -> 마지막 이미지로 이동
  * 현재 마지막 이미지일 때 next -> 첫 이미지로 이동
+ * includes() : 해당 원소가 있으면 true 반환
  */
 
 function next(){
-  if(sampleimg.src=="images/image-1.png"){
+  if(img.src.includes('images/image-1.png')){
     img2();
-  }else if(sampleimg.src == "images/image-2.png"){
+  }else if(img.src.includes("images/image-2.png")){
     img3();
-  }else if(sampleimg.src == "images/image-3.png"){
+  }else if(img.src.includes("images/image-3.png")){
     img4();
-  }else if(sampleimg.src == "images/image-4.png"){
+  }else if(img.src.includes("images/image-4.png")){
     img5();
-  }else if(sampleimg.src == "images/image-5.png"){
-    img1();
   }else {
-    console.log("error");
+    img1();
   }
 }
 
+
 function prev(){
-  if(sampleimg.src=="images/image-1.png"){
+  if(img.src.includes("images/image-1.png")){
     img5();
-  }else if(sampleimg.src == "images/image-2.png"){
+  }else if(img.src.includes("images/image-2.png")){
     img1();
-  }else if(sampleimg.src == "images/image-3.png"){
+  }else if(img.src.includes("images/image-3.png")){
     img2();
-  }else if(sampleimg.src == "images/image-4.png"){
+  }else if(img.src.includes("images/image-4.png")){
     img3();
-  }else if(sampleimg.src == "images/image-5.png"){
-    img4();
   }else {
-    console.log("error");
+    img4();
   }
 }
 
