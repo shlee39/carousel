@@ -28,3 +28,30 @@ section {
   display: flex;
   flex-direction: row;
 }
+
+.wrap-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+  border: none;
+}
